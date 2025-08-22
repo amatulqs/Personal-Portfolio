@@ -368,10 +368,10 @@ nav {
     }
     
     .about .headshot img {
-    width: 200px;
+    width: 300px;
     max-width: 80%;
-    border-radius: 50%;
-    margin: 0 auto 15px auto;
+    border-radius: 30%;
+    margin: 0 auto 10px auto;
     }
     
     .about text h2{
