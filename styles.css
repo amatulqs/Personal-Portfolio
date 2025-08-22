@@ -371,7 +371,7 @@ nav {
     }
     
     .about .headshot img {
-    display: block;
+    align-items: center;
     width: 300px;
     max-width: 80%;
     border-radius: 30%;
@@ -379,9 +379,11 @@ nav {
     }
     
     .about text h2{
+        text-align: center;
         font-size: 25px;
     }
     .about .text {
+        align-text: center;
         font-size: medium;
     }
 
