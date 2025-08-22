@@ -39,8 +39,10 @@ nav {
 
 nav .left a{
     color: var(--text-color);
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
     
 }
 
