@@ -377,7 +377,7 @@ nav {
     .about .headshot img {
         align-items: center;
         width: 300px;
-        max-width: 80%;
+        max-width: 100%;
         border-radius: 30%;
         margin: 0 auto 15px auto;
     }
