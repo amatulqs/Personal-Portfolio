@@ -1,0 +1,411 @@
+:root{
+    --text-color: black ;
+    --link-color: rgba(128, 128, 128, 0.547);
+    background: linear-gradient(150deg, #f8f5f0, #c3d9e9, #f0f4f8);
+}
+
+/* default styling */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* scrolling the website */
+html { 
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Open Sans', sans-serif;
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    align-items: center;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 400;
+    
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+    font-size: 20px;
+
+}
+
+nav .right a span{
+      margin-left: 3px;
+}
+
+nav {
+    border-bottom: 5px groove rgba(255, 255, 255, 0.2);/* border below navbar */
+}
+
+
+/* SECTION 1: ABOUT ME */
+.about {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap: 30px;
+
+}
+
+.about .text {
+    flex:7;
+    font-size:larger; 
+}
+
+.about .headshot {
+    flex:3;  
+}
+
+.about .headshot img {
+    width: 400px;
+    height: auto;
+    border-radius: 20%;
+    border: 2px solid var(--link-color);
+    margin-bottom: 10px;
+    gap: 30px;
+    transition: transform 0.4s ease, filter 0.4s ease; 
+}
+
+.about .headshot img:hover {
+    transform: scale(1.05);  /* slight zoom */
+    filter: brightness(1.1);  /* slightly brighter */
+}
+
+
+.about .text .links a{
+    color: darkslategray;
+}
+
+.about .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.about .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+
+}
+
+.about .text .links {
+    margin-top: 25px;
+}
+
+
+/* SECTION 2: SKILLS */
+
+.skill-stack {
+    padding: 0 50px;
+    margin-bottom: 10px;
+    text-align: center; /* center heading and text */
+}
+
+.skill-stack h2 {
+    margin-bottom: 15px;
+}
+
+.skill-stack .text {
+    max-width: 600px;
+    margin: 0 auto 35px auto; /* center paragraph */
+}
+
+/* Skill boxes container */
+.skill-stack {
+    display: flex;
+    flex-wrap: wrap;       /* allow wrapping on smaller screens */
+    justify-content: center; /* center boxes horizontally */
+    gap: 15px;             /* space between boxes */
+}
+
+.skill-stack .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Individual skill box */
+.skill-stack .skill-box {
+    display: flex;
+    flex-direction: column; /* icon above text */
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    font-size: medium;
+    border: 2.5px solid var(--link-color); /* default border */
+    border-radius: 15px;
+    min-width: 120px;
+    gap: 5px; /* space between icon and text */  
+    transition: border 0.3s, color 0.3s; /* smooth color and border change */
+    cursor: pointer;
+}
+
+.skill-stack .skill-box:hover {
+    color: var(--text-color);          /* text color on hover */
+    border: 2px var(--text-color);   /* border color on hover */
+}
+
+.skill-box i {
+    font-size: 25px;                   /* default icon size */
+    transition: transform 0.3s ease;   /* smooth scaling effect */
+}
+
+.skill-box:hover i {
+    transform: scale(1.1);             /* subtle icon zoom on hover */
+    font-size: 25px;                    /* default size for all icons */
+    margin-right: 5px;                  /* space between icon and text */
+}
+
+
+/* SECTION 3: WORK EXPERIENCE */
+
+#work-experience {
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+/* Each job card */
+.jobs .position {
+    margin-top:20px;
+    margin-bottom: 30px;
+    justify-content: center;
+    border: 15px groove rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect: Shadows */
+.jobs .position:hover {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.355);
+}
+
+/* Job title */
+.jobs .position h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px;
+}
+
+/* Job Position: date and location */
+.jobs .position p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin: 0 0 6px;
+}
+
+/* List items */
+.jobs .position ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.jobs .position ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+
+/* SECTION 4: PROJECTS : using Bootstrap */ 
+
+#projects {
+    margin-top: 30px;
+    padding-left: 50px;   /* adds space from left for the whole section */
+    justify-content: center;
+}
+  
+#projects h2 { /* Section title */
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+  }
+
+
+.projects-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+.card {
+    flex: 1 1 33%; /* 3 per row */
+    max-width: 350px;               
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    padding: 15px;
+    color: var(--text-color);
+}
+
+
+/* Medium screens */
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 50%; /* 2 cards per row */
+    }
+}
+  
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  /* Card image */
+  .card-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+  
+  /* Card title */
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+  
+
+
+
+
+
+
+
+/* To make the website responsive */
+
+@media (max-width: 850px) {
+    /* SECTION 1: ABOUT */
+    .about .text h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+     /* SECTION 1: ABOUT */
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        width: 90%;
+        margin: 15px auto;
+      }
+    
+      #projects h2 {
+        font-size: 24px;
+      }
+}
+
+@media (max-width: 600px){ /* Mobile Friendly*/
+    /* NAVBAR */
+    nav {
+        padding: 0 20px;
+        padding-bottom: 20px;
+    }
+
+    nav .right a span{
+    display: none;
+    }
+    nav .right a{
+    font-size: 20px;
+    }
+
+    .left { 
+        /* top-left title */
+        margin-top: 20px;
+    }
+
+    /* SECTION 1: ABOUT */
+    .about {
+        padding: 0 20px;
+    }
+    .about text h2{
+        font-size: 25px;
+    }
+    .about .text {
+        font-size: medium;
+    }
+
+
+    /* SECTION 2: SKILLS */
+    .skill-box i {
+        font-size: 15px; /* default size for all icons */
+        margin-right: 4px; /* space between icon and text */
+    }
+
+    .skill-stack .skill-box {
+        padding: 10px 15px;
+        border: 1.5px solid var(--link-color);
+    }
+    #projects {
+        margin-top: 30px;
+        padding-left: 30px;   /* adds space from left for the whole section */
+        justify-content: center;
+        text-align:center;
+    }
+    #work-experience h2{
+        margin-top: 30px;
+        padding-left: 30px;   /* adds space from left for the whole section */
+        justify-content: center;
+        text-align: center;
+    }
+    #skills {
+        margin-top: 30px;
+        padding-left: 30px;   /* adds space from left for the whole section */
+        justify-content: center;
+    }
+
+    /*SECTION 3: PROJECTS*/
+    .card {
+        flex: 1 1 100%;
+    }
+
+
+}
