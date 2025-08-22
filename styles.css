@@ -371,6 +371,7 @@ nav {
     }
     
     .about .headshot img {
+    display: block;
     width: 300px;
     max-width: 80%;
     border-radius: 30%;
