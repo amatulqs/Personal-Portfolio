@@ -369,13 +369,17 @@ nav {
     .about {
         padding: 0 20px;
     }
+
+    .about .headshot {
+        justify-content: center;
+    }
     
     .about .headshot img {
-    align-items: center;
-    width: 300px;
-    max-width: 80%;
-    border-radius: 30%;
-    margin: 0 auto 15px auto;
+        align-items: center;
+        width: 300px;
+        max-width: 80%;
+        border-radius: 30%;
+        margin: 0 auto 15px auto;
     }
     
     .about text h2{
