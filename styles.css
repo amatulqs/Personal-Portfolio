@@ -371,18 +371,19 @@ nav {
     }
 
     .about .headshot {
+        display: flex;
         justify-content: center;
     }
     
     .about .headshot img {
-        align-items: center;
+        display: block;
         width: 300px;
         max-width: 100%;
         border-radius: 30%;
         margin: 0 auto 15px auto;
     }
     
-    .about text h2{
+    .about .text h2{
         text-align: center;
         font-size: 25px;
     }
