@@ -355,6 +355,7 @@ nav {
     nav .right a span{
     display: none;
     }
+    
     nav .right a{
     font-size: 20px;
     }
@@ -373,8 +374,7 @@ nav {
     width: 300px;
     max-width: 80%;
     border-radius: 30%;
-    margin: 0 auto 10px auto;
-    justify-content: center;
+    margin: 0 auto 15px auto;
     }
     
     .about text h2{
