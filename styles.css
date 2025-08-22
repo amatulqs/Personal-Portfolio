@@ -374,6 +374,7 @@ nav {
     max-width: 80%;
     border-radius: 30%;
     margin: 0 auto 10px auto;
+    justify-content: center;
     }
     
     .about text h2{
