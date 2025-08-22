@@ -366,6 +366,14 @@ nav {
     .about {
         padding: 0 20px;
     }
+    
+    .about .headshot img {
+    width: 200px;
+    max-width: 80%;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    }
+    
     .about text h2{
         font-size: 25px;
     }
@@ -386,19 +394,19 @@ nav {
     }
     #projects {
         margin-top: 30px;
-        padding-left: 30px;   /* adds space from left for the whole section */
+        padding-left: 30px;   
         justify-content: center;
         text-align:center;
     }
     #work-experience h2{
         margin-top: 30px;
-        padding-left: 30px;   /* adds space from left for the whole section */
+        padding-left: 30px;   
         justify-content: center;
         text-align: center;
     }
     #skills {
         margin-top: 30px;
-        padding-left: 30px;   /* adds space from left for the whole section */
+        padding-left: 30px;   
         justify-content: center;
     }
 
